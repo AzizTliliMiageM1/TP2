@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>  // pour sleep()
+#include <unistd.h>  // pour le sleep()
 
 int main() {
     int numero;
@@ -13,11 +13,10 @@ int main() {
         printf("\n🎉 Félicitations ! Vous avez trouvé le bon numéro ! 🎉\n");
         printf("Préparez-vous pour la célébration...\n");
 
-        // Mini animation simple avec des étoiles
         for (int i = 0; i < 5; i++) {
             printf("*");
-            fflush(stdout);  // force l'affichage immédiat
-            sleep(1);        // pause d'une seconde
+            fflush(stdout); 
+            sleep(1);        
         }
         printf("\nCélébration terminée ! 🎊\n");
     } else {
